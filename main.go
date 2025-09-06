@@ -8,11 +8,6 @@ import (
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: go run main.go <Instagram Reel URL>")
-		return
-	}
-
 	reelURL := ""
 	cmd := exec.Command("yt-dlp", "-o", "reel.mp4", reelURL)
 
